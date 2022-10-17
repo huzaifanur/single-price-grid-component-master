@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --Cyan: hsl(179, 62%, 43%);
+  --BrightYellow: hsl(71, 73%, 65%);
+  --LightGray: hsl(204, 43%, 93%);
+  --GrayishBlue: hsl(218, 22%, 67%);
+}
+
+.text-white {
+  color: white;
+}
+
+.text-lightGray {
+  color: var(--GrayishBlue);
+}
+
+.text-gold {
+  color: var(--BrightYellow);
+}
+
+body {
+  background-color: var(--LightGray);
+  font-family: "Karla", sans-serif;
+  line-height: 1.4;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 635px;
+  margin: 4.5rem 2rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.section {
+  background-color: var(--bg);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.section-heading {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.heading-1 {
+  font-size: 1.5rem;
+  color: var(--Cyan);
+  font-weight: 700;
+}
+
+.offer-price {
+  display: flex;
+  align-items: center;
+}
+.offer-price > :nth-child(1) {
+  font-size: 2rem;
+}
+.offer-price > :nth-child(2) {
+  color: var(--LightGray);
+  font-size: 1rem;
+  margin-left: 16px;
+}
+
+.cta {
+  background-color: var(--BrightYellow);
+  height: 50px;
+  border-radius: 0.5rem;
+  font-weight: 700;
+}
+
+@media all and (min-width: 700px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .section-1 {
+    min-height: 216px;
+  }
+
+  .row-2 {
+    display: flex;
+    flex-basis: 1;
+  }
+  .section-2 {
+    flex-basis: 50%;
+  }
+  .section-heading {
+    font-size: 18px;
+  }
+
+  .section-3 {
+    flex-basis: 50%;
+  }
+  .description-main {
+    font-size: 17px;
+  }
+}
